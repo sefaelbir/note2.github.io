@@ -12,7 +12,7 @@ export default class NotesView {
             </div>
             <div class="notes__preview">
                 <input class="notes__title" type="text" placeholder="Yeni Sayfa">
-                <textarea class="notes__body">Not al...</textarea>
+                <textarea class="notes__body" placeholder="Not al...">#blablabla</textarea>
             </div>
         `;
 
