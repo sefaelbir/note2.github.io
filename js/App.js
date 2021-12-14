@@ -39,8 +39,8 @@ export default class App {
             },
             onNoteAdd: () => {
                 const newNote = {
-                    title: "Yeni Sayfa",
-                    body: "Not al..."
+                    title: "",
+                    body: ""
                 };
 
                 NotesAPI.saveNote(newNote);
