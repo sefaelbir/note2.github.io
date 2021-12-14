@@ -2,6 +2,7 @@ html,
 body {
     height: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .notes {
@@ -82,7 +83,6 @@ body {
     outline: none;
     width: 100%;
     float:left;
-    overflow-x: hidden;
 }
 
 .notes__title {
