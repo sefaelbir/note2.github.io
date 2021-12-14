@@ -17,6 +17,7 @@ body {
     border-right: 2px solid #dddddd;
     flex-shrink: 0;
     overflow-y: auto;
+    overflow-x: hidden;
     padding: 1em;
     width: 300px;
 }
