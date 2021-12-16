@@ -66,6 +66,7 @@ body {
     color: #aaaaaa;
     font-style: italic;
     text-align: right;
+    font-weight: normal;
 }
 
 .notes__preview {
