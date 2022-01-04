@@ -95,3 +95,19 @@ body {
     margin-top: 2em;
     resize: none;
 }
+
+::-webkit-scrollbar {
+  background: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+::-webkit-scrollbar-thumb {
+  background: var(--btn);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
