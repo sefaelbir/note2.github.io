@@ -6,10 +6,9 @@ body {
 .notes {
     display: flex;
     height: 100%;
-}
-.notes * {
     font-family: sans-serif;
 }
+
 .notes__sidebar {
     border-right: 2px solid #dddddd;
     flex-shrink: 0;
