@@ -17,14 +17,12 @@ body.light-theme {
   background-color: var(--light-theme);
   color: black;
 }
-
 .toggle input[type="checkbox"] {
   display: none;
 }
-
 .toggle label {
-  background-color: #777;
-  border: 2px solid #555;
+  background-color: #71717;
+  border: 2px solid #71717;
   border-radius: 50px;
   cursor: pointer;
   display: inline-block;
@@ -37,7 +35,7 @@ body.light-theme {
   top: 10px;
 }
 .toggle label::after {
-  background-color: #555;
+  background-color: #71717;
   border-radius: 50%;
   content: "🖤";
   cursor: pointer;
@@ -143,18 +141,15 @@ body.light-theme .notes__list-item--selected {
 ::-webkit-scrollbar {
   width: 20px;
 }
-
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: #717171;
   border-radius: 20px;
   border: 6px solid transparent;
   background-clip: content-box;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background-color: #666565;
 }
