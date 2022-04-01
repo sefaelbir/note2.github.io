@@ -1,192 +1,194 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth@95&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wdth@95&display=swap");
 
 :root {
-    --light-theme: #F9F9F9;
-    --dark-theme: #181818;
-    --add-button: #FF9D2E;
+  --light-theme: #f9f9f9;
+  --dark-theme: #181818;
+  --add-button: #ff9d2e;
 }
 
 html,
 body {
-    height: 100%;
-    margin: 0;
-    background-color: var(--dark-theme);
+  height: 100%;
+  margin: 0;
+  background-color: var(--dark-theme);
 }
 /* toogle */
 body.light-theme {
-	background-color: var(--light-theme);
-    color:black;
+  background-color: var(--light-theme);
+  color: black;
 }
 
-.toggle input[type=checkbox] {
-	display: none;
+.toggle input[type="checkbox"] {
+  display: none;
 }
 
 .toggle label {
-	background-color: #777;
-	border: 2px solid #555;
-	border-radius: 50px;
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	transition: all ease-in-out 0.3s;
-	width: 50px;
-	height: 25px;
-    position:absolute;
-    right: 10px;
-    top: 10px;
+  background-color: #777;
+  border: 2px solid #555;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  width: 50px;
+  height: 25px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 .toggle label::after {
-	background-color: #555;
-	border-radius: 50%;
-	content: '🖤';
-	cursor: pointer;
-	display: inline-block;
-	position: absolute;
-	left: 2px;
-	top: 2px;
-	transition: all ease-in-out 0.3s;
-	width: 21px;
-	height: 21px;
+  background-color: #555;
+  border-radius: 50%;
+  content: "🖤";
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: all ease-in-out 0.3s;
+  width: 21px;
+  height: 21px;
 }
-.toggle input[type=checkbox]:checked ~ label::after {
-	transform: translateX(25px);
+.toggle input[type="checkbox"]:checked ~ label::after {
+  transform: translateX(25px);
 }
 .notes {
-    display: flex;
-    height: 100%;
+  display: flex;
+  height: 100%;
 }
-body.light-theme .notes__sidebar, body.light-theme .notes__body, body.light-theme .notes__title {
-    color:black;
+body.light-theme .notes__sidebar,
+body.light-theme .notes__body,
+body.light-theme .notes__title {
+  color: black;
 }
 body.light-theme .notes__list-item--selected {
-    background: #EEEEEE;
+  background: #eeeeee;
 }
 .notes__sidebar {
-    border-right: 2px solid #717171;
-    flex-shrink: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 1em;
-    width: 300px;
-    color:white;
-    font-family: 'Inconsolata', monospace;
+  border-right: 2px solid #717171;
+  flex-shrink: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1em;
+  width: 300px;
+  color: white;
+  font-family: "Inconsolata", monospace;
 }
 .notes__add {
-    background: var(--add-button);
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-    margin-bottom: 1em;
-    padding: 0.75em 0;
-    width: 100%;
-    font: bold 1.25em 'Inconsolata', monospace;
+  background: var(--add-button);
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-bottom: 1em;
+  padding: 0.75em 0;
+  width: 100%;
+  font: bold 1.25em "Inconsolata", monospace;
 }
 .notes__add:hover {
-    background: #ff9d2e;
+  background: #ff9d2e;
 }
 .notes__list-item {
-    cursor: pointer;
-    word-wrap: break-word;
+  cursor: pointer;
+  word-wrap: break-word;
 }
 .notes__list-item--selected {
-    background: #717171;
-    border-radius: 7px;
-    font-weight: bold;
+  background: #717171;
+  border-radius: 7px;
+  font-weight: bold;
 }
 .notes__small-title,
 .notes__small-updated {
-    padding: 10px;
+  padding: 10px;
 }
 .notes__small-title {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 .notes__small-body {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 .notes__small-updated {
-    color: #aaa;
-    font-style: italic;
-    text-align: right;
-    font-weight: normal;
+  color: #aaa;
+  font-style: italic;
+  text-align: right;
+  font-weight: normal;
 }
 .notes__preview {
-    display: flex;
-    flex-direction: column;
-    padding: 2em 3em;
-    flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 3em;
+  flex-grow: 1;
 }
 .notes__title,
 .notes__body {
-    border: none;
-    outline: none;
-    width: 100%;
-    background-color: transparent;
-    font-family: 'Inconsolata', monospace;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  font-family: "Inconsolata", monospace;
 }
 .notes__title {
-    height: 60px;
-    color: white;
-    font: bold 3em 'Inconsolata', monospace;
+  height: 60px;
+  color: white;
+  font: bold 3em "Inconsolata", monospace;
 }
 .notes__body {
-    flex-grow: 1;
-    font-size: 1.2em;
-    line-height: 1.5;
-    margin-top: 2em;
-    resize: none;
-    color: white;
+  flex-grow: 1;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-top: 2em;
+  resize: none;
+  color: white;
 }
 /* custom scrollbar */
-    ::-webkit-scrollbar {
-      width: 20px;
-    }
-  
-    ::-webkit-scrollbar-track {
-      background-color: transparent;
-    }
-  
-    ::-webkit-scrollbar-thumb {
-      background-color: #717171;
-      border-radius: 20px;
-      border: 6px solid transparent;
-      background-clip: content-box;
-    }
-  
-    ::-webkit-scrollbar-thumb:hover {
-      background-color: #666565;
-    }
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #717171;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666565;
+}
 /* media rule */
-  @media only screen and (max-width: 900px) {
-    .notes__sidebar{
-        padding: 0.5em;
-        width: 20%;
-    }
-    .notes__add {
-        font-size: 1em;
-        padding: 0.5em 0;
-    }
-    .notes__small-title,
-    .notes__small-updated {
-        padding: 5px;
-    }
-    .notes__small-title {
-        font-size: 1em;
-    }
-    .notes__small-body {
-        padding: 0 5px;
-    }
-    .notes__small-updated {
-        font-size: 0.7em; 
-    }
-    .notes__preview {
-        padding: 0.5em 0.6em;
-    }
-    .notes__title {
-        font-size: 1.5em;
-    }
-    .notes__body {
-        font-size: 1em;
-        margin-top: 1.5em;
-    }
+@media only screen and (max-width: 900px) {
+  .notes__sidebar {
+    padding: 0.5em;
+    width: 20%;
   }
+  .notes__add {
+    font-size: 1em;
+    padding: 0.5em 0;
+  }
+  .notes__small-title,
+  .notes__small-updated {
+    padding: 5px;
+  }
+  .notes__small-title {
+    font-size: 1em;
+  }
+  .notes__small-body {
+    padding: 0 5px;
+  }
+  .notes__small-updated {
+    font-size: 0.7em;
+  }
+  .notes__preview {
+    padding: 0.5em 0.6em;
+  }
+  .notes__title {
+    font-size: 1.5em;
+  }
+  .notes__body {
+    font-size: 1em;
+    margin-top: 1.5em;
+  }
+}
