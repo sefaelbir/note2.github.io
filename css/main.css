@@ -12,6 +12,7 @@ body {
   height: 100%;
   margin: 0;
   background-color: var(--dark-theme);
+  overflow-x: unset;
 }
 /* toggle */
 body.light-theme {
@@ -158,6 +159,16 @@ body.light-theme .notes__list-item--selected {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
+/* unselect */
+.notes__small-updated,
+.notes__add {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
 /* media rule */
 @media only screen and (max-width: 900px) {
   .notes__sidebar {
