@@ -56,7 +56,7 @@ export default class NotesView {
                 </div>
                 <div class="notes__small-updated">
                     ${updated.toLocaleString(undefined, {
-                      dateStyle: "full",
+                      dateStyle: "short",
                       timeStyle: "short",
                     })}
                 </div>
