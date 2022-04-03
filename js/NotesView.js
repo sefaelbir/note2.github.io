@@ -10,7 +10,7 @@ export default class NotesView {
     this.onNoteDelete = onNoteDelete;
     this.root.innerHTML = `
             <div class="notes__sidebar">
-                <button class="notes__add" type="button" >Not Ekle</button>
+                <button class="notes__add" type="button">Not Ekle</button>
                 <div class="notes__list"></div>
             </div>
             <div class="notes__preview">
@@ -90,7 +90,7 @@ export default class NotesView {
         });
 
         noteListItem.addEventListener("dblclick", () => {
-          const doDelete = confirm("Silmek istediğine emin misin?");
+          const doDelete = confirm("✖ Silmek istediğine emin misin?");
 
           if (doDelete) {
             this.onNoteDelete(noteListItem.dataset.noteId);
