@@ -15,3 +15,7 @@ toggle.addEventListener("input", (e) => {
     body.classList.remove("light-theme");
   }
 });
+
+console.log(
+  "\n hey 🖐, what are you doing? \n feel free to say hi via twitter (@sefael1) or email (sefaelbir@gmail.com)\n\n - sefa"
+);
