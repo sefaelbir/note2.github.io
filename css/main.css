@@ -74,12 +74,12 @@ body.light-theme .notes__list-item--selected {
   overflow-y: auto;
   overflow-x: hidden;
   padding: 1em;
-  width: 300px;
+  max-width: 300px;
   color: white;
   font-family: "Inconsolata", monospace;
 }
 .notes__add {
-  background: var(--add-button);
+  background: #ff9d2e;
   border: none;
   border-radius: 7px;
   cursor: pointer;
@@ -170,10 +170,10 @@ body.light-theme .notes__list-item--selected {
 }
 
 /* media rule */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-device-width: 900px) {
   .notes__sidebar {
     padding: 0.5em;
-    width: 20%;
+    max-width: 20%;
   }
   .notes__add {
     font-size: 1em;
