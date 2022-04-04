@@ -87,9 +87,10 @@ body.light-theme .notes__list-item--selected {
   padding: 0.75em 0;
   width: 100%;
   font: bold 1.25em "Inconsolata", monospace;
+  color: black;
 }
 .notes__add:hover {
-  background: #ff9d2e;
+  background: #ffa641;
 }
 .notes__list-item {
   cursor: pointer;
