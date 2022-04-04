@@ -15,7 +15,7 @@ export default class NotesView {
             </div>
             <div class="notes__preview">
                 <input class="notes__title" type="text" maxlength="80" placeholder="Yeni Sayfa">
-                <textarea class="notes__body" placeholder=">_" spellcheck="false"></textarea>
+                <textarea class="notes__body" placeholder="Not almaya başla..." spellcheck="false"></textarea>
             </div>
         `;
 
