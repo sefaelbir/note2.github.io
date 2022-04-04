@@ -35,7 +35,9 @@ body.light-theme {
   position: absolute;
   right: 10px;
   top: 10px;
+  text-align: center;
 }
+
 .toggle label::after {
   background-color: #555;
   border-radius: 50%;
@@ -74,7 +76,7 @@ body.light-theme .notes__list-item--selected {
   overflow-y: auto;
   overflow-x: hidden;
   padding: 1em;
-  max-width: 300px;
+  width: 300px;
   color: white;
   font-family: "Inconsolata", monospace;
 }
@@ -174,7 +176,7 @@ body.light-theme .notes__list-item--selected {
 @media only screen and (max-device-width: 900px) {
   .notes__sidebar {
     padding: 0.5em;
-    max-width: 20%;
+    width: 20%;
   }
   .notes__add {
     font-size: 1em;
@@ -202,5 +204,20 @@ body.light-theme .notes__list-item--selected {
   .notes__body {
     font-size: 1em;
     margin-top: 1.5em;
+  }
+  .toggle label {
+    width: 30px;
+    height: 17px;
+    font-size: 10px;
+  }
+  .toggle label::after {
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    left: 1px;
+    top: 1px;
+  }
+  .toggle input[type="checkbox"]:checked ~ label::after {
+    transform: translateX(12px);
   }
 }
